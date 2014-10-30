@@ -12,7 +12,7 @@
     <div class ="container">
       <%= yield %>
       <%= render 'layouts/footer' %>
-      <%= render 'layouts/footer' %>
+      <%= debug(params) if Rail.env.development? %>
     </div>
   </body>
 </html>
