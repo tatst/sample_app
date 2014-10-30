@@ -2,4 +2,4 @@
 <h1>
   <%= gravstar_for @user %>
   <%= @user.name %>
-<h1>
+</h1>
