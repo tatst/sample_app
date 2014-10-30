@@ -1,8 +1,8 @@
 module UsersHelper
 
-  def gravstar_for(user)
-    gravstar_id = Digest::MD5::hexdigest(user.email.downcase)
-    gravstar_url = "https://secure.gravstar.com/avatar/#{gravstar_id}"
-    image_tag(gravstar_url, alt: user.name, class: "gravstar")
+  def gravatar_for(user)
+    gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
+    gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}"
+    image_tag(gravatar_url, alt: user.name, class: "gravatar")
   end
 end
