@@ -9,7 +9,7 @@
 	  <% if signed_in? %>
 	    <li><%= link_to "Users", '#' %></li>
 	    <li id="fat-menu" class="dropdown">
-	      <a href="#" class="dropdown-taggle" data-tabble="dropdown">
+	      <a href="#" class="dropdown-taggle" data-toggle="dropdown">
 		Account <b class="caret"></b>
 	      </a>
 	      <ul class="dropdown-menu">
@@ -22,9 +22,10 @@
 	      </ul>
 	    <li>
 	  <% else %>
-          <li><%= link_to "Sign in", signin_path %></li>
+            <li><%= link_to "Sign in", signin_path %></li>
 	  <% end %>
         </ul>
       </nav>
     </div>
+  </div>
 </header>
