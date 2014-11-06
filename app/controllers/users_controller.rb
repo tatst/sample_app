@@ -65,6 +65,6 @@ class UsersController < ApplicationController
     end
 
     def admin_user
-      recirect_to(root_path) unless curent_user.admin?
+      redirect_to(root_path) unless curent_user.admin?
     end
 end
